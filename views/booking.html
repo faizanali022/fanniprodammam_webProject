@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Book Service | Fanni Pro Dammam" data-ar="حجز الخدمة | فني برو الدمام">Book Service | Fanni Pro
+        Dammam</title>
+    <meta name="description"
+        data-en="Book professional handyman services in Dammam. Schedule appointments for home repairs, electrical work, plumbing, and more."
+        data-ar="احجز خدمات فني محترف في الدمام. حدد مواعيد لتصليحات المنزل وأعمال الكهرباء والسباكة والمزيد">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/a-circular-professional-handyman-service-logo-desi.png"
+        alt="Fanni Pro Dammam - Professional Handyman in Dammam">
+</head>
+
+<body dir="ltr">
+
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/images/a-circular-professional-handyman-service-logo-desi.png"
+                        alt="Fanni Pro Dammam - Professional Handyman in Dammam" class="logo-image">
+                    <div class="logo-text">
+                        <h1 data-en="Fanni Pro Dammam" data-ar="فني برو الدمام">Fanni Pro Dammam</h1>
+                        <p data-en="Professional Handyman in Dammam" data-ar="فني محترف في الدمام">Professional
+                            Handyman in Dammam</p>
+                    </div>
+                </a>
+
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/" data-en="Home" data-ar="الرئيسية">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about" data-en="About" data-ar="من نحن">About</a>
+                        </li>
+                        <li><a href="/services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="/booking" class="active" data-en="Book Now" data-ar="احجز الآن">Book Now</a></li>
+                        <li><a href="/contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Hero Section -->
+    <section class="booking-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-en="Book Your Service Now" data-ar="احجز خدمتك الآن">Book Your Service Now</h1>
+                <p data-en="Get professional handyman service at your doorstep in Dammam within 2 hours"
+                    data-ar="احصل على خدمة فني محترف عند عتبة دارك في الدمام خلال ساعتين">Get professional handyman
+                    service at your doorstep in Dammam within 2 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-steps">
+                    <div class="step active">
+                        <div class="step-number">1</div>
+                        <div class="step-text" data-en="Service Details" data-ar="تفاصيل الخدمة">Service Details</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text" data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text" data-en="Confirmation" data-ar="تأكيد">Confirmation</div>
+                    </div>
+                </div>
+
+                <div class="booking-main-content">
+                    <!-- Left Column - Form -->
+                    <div class="booking-form-container">
+                        <form id="bookingForm" class="booking-form" action="/api/bookings" method="POST">
+                            <!-- Step 1: Service Details -->
+                            <div class="form-section active" id="section1">
+                                <h3 class="form-section-title" data-en="1. Select Your Service" data-ar="1. اختر خدمتك">
+                                    1. Select Your Service</h3>
+
+                                <div class="service-selection-grid">
+                                    <div class="service-card-option" data-service="plumbing">
+                                        <input type="radio" id="plumbing" name="service" value="Plumbing Services"
+                                            required>
+                                        <label for="plumbing">
+                                            <div class="service-card-icon">
+                                                <i class="fas fa-faucet"></i>
+                                            </div>
+                                            <h4 data-en="Plumbing Services" data-ar="خدمات السباكة">Plumbing Services
+                                            </h4>
+                                            <div class="service-features">
+                                                <span data-en="High pressure cleaning" data-ar="تنظيف عالي الضغط"><i
+                                                        class="fas fa-check"></i> High pressure cleaning</span>
+                                                <span data-en="Fixture installation" data-ar="تركيب التركيبات"><i
+                                                        class="fas fa-check"></i> Fixture installation</span>
+                                                <span data-en="Drain cleaning" data-ar="تنظيف المصارف"><i
+                                                        class="fas fa-check"></i> Drain cleaning</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="service-card-option" data-service="electrical">
+                                        <input type="radio" id="electrical" name="service" value="Electrical Work"
+                                            required>
+                                        <label for="electrical">
+                                            <div class="service-card-icon">
+                                                <i class="fas fa-bolt"></i>
+                                            </div>
+                                            <h4 data-en="Electrical Work" data-ar="أعمال الكهرباء">Electrical Work</h4>
+                                            <div class="service-features">
+                                                <span data-en="Wiring & lighting" data-ar="الأسلاك والإضاءة"><i
+                                                        class="fas fa-check"></i> Wiring & lighting</span>
+                                                <span data-en="Outlets & switches" data-ar="المقابس والمفاتيح"><i
+                                                        class="fas fa-check"></i> Outlets & switches</span>
+                                                <span data-en="Repair & installation" data-ar="الإصلاح والتركيب"><i
+                                                        class="fas fa-check"></i> Repair & installation</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="service-card-option" data-service="general">
+                                        <input type="radio" id="general" name="service" value="General Repairs"
+                                            required>
+                                        <label for="general">
+                                            <div class="service-card-icon">
+                                                <i class="fas fa-tools"></i>
+                                            </div>
+                                            <h4 data-en="General Repairs" data-ar="إصلاحات عامة">General Repairs</h4>
+                                            <div class="service-features">
+                                                <span data-en="Furniture assembly" data-ar="تجميع الأثاث"><i
+                                                        class="fas fa-check"></i> Furniture assembly</span>
+                                                <span data-en="Cabinet repair" data-ar="إصلاح الخزائن"><i
+                                                        class="fas fa-check"></i> Cabinet repair</span>
+                                                <span data-en="Maintenance" data-ar="الصيانة"><i
+                                                        class="fas fa-check"></i> Maintenance</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="service-card-option" data-service="painting">
+                                        <input type="radio" id="painting" name="service" value="Painting Services"
+                                            required>
+                                        <label for="painting">
+                                            <div class="service-card-icon">
+                                                <i class="fas fa-paint-roller"></i>
+                                            </div>
+                                            <h4 data-en="Painting Services" data-ar="خدمات الدهان">Painting Services
+                                            </h4>
+                                            <div class="service-features">
+                                                <span data-en="Interior/Exterior" data-ar="داخلي/خارجي"><i
+                                                        class="fas fa-check"></i> Interior/Exterior</span>
+                                                <span data-en="Wall painting" data-ar="دهان الجدران"><i
+                                                        class="fas fa-check"></i> Wall painting</span>
+                                                <span data-en="Color consultation" data-ar="استشارة الألوان"><i
+                                                        class="fas fa-check"></i> Color consultation</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="serviceDate">
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span data-en="Preferred Date" data-ar="التاريخ المفضل">Preferred Date
+                                                *</span>
+                                        </label>
+                                        <input type="date" id="serviceDate" name="serviceDate" class="form-control"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="timeSlot">
+                                            <i class="far fa-clock"></i>
+                                            <span data-en="Time Slot" data-ar="الفترة الزمنية">Time Slot *</span>
+                                        </label>
+                                        <select id="timeSlot" name="timeSlot" class="form-control" required>
+                                            <option value="" data-en="Select time slot" data-ar="اختر الفترة الزمنية">
+                                                Select time slot</option>
+                                            <option value="9AM-12PM" data-en="Morning (9 AM - 12 PM)"
+                                                data-ar="الصباح (9 ص - 12 ظ)">Morning (9 AM - 12 PM)</option>
+                                            <option value="12PM-3PM" data-en="Afternoon (12 PM - 3 PM)"
+                                                data-ar="بعد الظهر (12 ظ - 3 ع)">Afternoon (12 PM - 3 PM)</option>
+                                            <option value="3PM-6PM" data-en="Evening (3 PM - 6 PM)"
+                                                data-ar="المساء (3 ع - 6 م)">Evening (3 PM - 6 PM)</option>
+                                            <option value="emergency" data-en="Emergency Service (24/7)"
+                                                data-ar="خدمة الطوارئ (24/7)">Emergency Service (24/7)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="description">
+                                        <i class="far fa-edit"></i>
+                                        <span data-en="Service Description" data-ar="وصف الخدمة">Service Description
+                                            *</span>
+                                    </label>
+                                    <textarea id="description" name="description" class="form-control" rows="4"
+                                        placeholder="Describe what needs to be done..."
+                                        data-en-placeholder="Describe what needs to be done..."
+                                        data-ar-placeholder="صف ما يجب القيام به..." required></textarea>
+                                </div>
+
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-primary next-step" data-en="Next: Contact Info"
+                                        data-ar="التالي: معلومات الاتصال">
+                                        <span data-en="Next: Contact Info" data-ar="التالي: معلومات الاتصال">Next:
+                                            Contact Info</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Contact Info -->
+                            <div class="form-section" id="section2">
+                                <h3 class="form-section-title" data-en="2. Your Contact Information"
+                                    data-ar="2. معلومات الاتصال الخاصة بك">2. Your Contact Information</h3>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="fullName">
+                                            <i class="fas fa-user"></i>
+                                            <span data-en="Full Name" data-ar="الاسم الكامل">Full Name *</span>
+                                        </label>
+                                        <input type="text" id="fullName" name="fullName" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="phone">
+                                            <i class="fas fa-phone"></i>
+                                            <span data-en="Phone Number" data-ar="رقم الهاتف">Phone Number *</span>
+                                        </label>
+                                        <input type="tel" id="phone" name="phone" class="form-control"
+                                            placeholder="+966 5X XXX XXXX" data-en-placeholder="+966 5X XXX XXXX"
+                                            data-ar-placeholder="+٩٦٦ ٥X XXX XXXX" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span data-en="Email Address" data-ar="البريد الإلكتروني">Email
+                                                Address</span>
+                                        </label>
+                                        <input type="email" id="email" name="email" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="area">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span data-en="Area in Dammam" data-ar="المنطقة في الدمام">Area in Dammam
+                                                *</span>
+                                        </label>
+                                        <select id="area" name="area" class="form-control" required>
+                                            <option value="" data-en="Select your area" data-ar="اختر منطقتك">Select
+                                                your area</option>
+                                            <option value="Al-Aziziyah" data-en="Al-Aziziyah" data-ar="العزيزية">
+                                                Al-Aziziyah</option>
+                                            <option value="Al-Faisaliyah" data-en="Al-Faisaliyah" data-ar="الفيصلية">
+                                                Al-Faisaliyah</option>
+                                            <option value="Al-Rakah" data-en="Al-Rakah" data-ar="الراكة">Al-Rakah
+                                            </option>
+                                            <option value="Al-Khobar" data-en="Al-Khobar" data-ar="الخبر">Al-Khobar
+                                            </option>
+                                            <option value="Al-Dhahran" data-en="Al-Dhahran" data-ar="الظهران">Al-Dhahran
+                                            </option>
+                                            <option value="Al-Olaya" data-en="Al-Olaya" data-ar="العليا">Al-Olaya
+                                            </option>
+                                            <option value="Al-Anoud" data-en="Al-Anoud" data-ar="العنود">Al-Anoud
+                                            </option>
+                                            <option value="Al-Nakheel" data-en="Al-Nakheel" data-ar="النخيل">Al-Nakheel
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="address">
+                                        <i class="fas fa-home"></i>
+                                        <span data-en="Complete Address" data-ar="العنوان الكامل">Complete Address
+                                            *</span>
+                                    </label>
+                                    <textarea id="address" name="address" class="form-control" rows="3" required
+                                        placeholder="Building number, street, apartment number..."
+                                        data-en-placeholder="Building number, street, apartment number..."
+                                        data-ar-placeholder="رقم المبنى، الشارع، رقم الشقة..."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="notes">
+                                        <i class="fas fa-sticky-note"></i>
+                                        <span data-en="Additional Notes" data-ar="ملاحظات إضافية">Additional
+                                            Notes</span>
+                                    </label>
+                                    <textarea id="notes" name="notes" class="form-control" rows="3"
+                                        placeholder="Any special instructions or notes..."
+                                        data-en-placeholder="Any special instructions or notes..."
+                                        data-ar-placeholder="أي تعليمات أو ملاحظات خاصة..."></textarea>
+                                </div>
+
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-light prev-step">
+                                        <i class="fas fa-arrow-left"></i>
+                                        <span data-en="Back" data-ar="رجوع">Back</span>
+                                    </button>
+                                    <button type="submit" class="btn btn-primary" data-en="Submit Booking"
+                                        data-ar="إرسال الحجز">
+                                        <span data-en="Submit Booking" data-ar="إرسال الحجز">Submit Booking</span>
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Confirmation -->
+                            <div class="form-section" id="section3">
+                                <div class="confirmation-container">
+                                    <div class="success-animation">
+                                        <div class="success-icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="success-circle"></div>
+                                    </div>
+
+                                    <h3 data-en="Booking Submitted Successfully!" data-ar="تم إرسال الحجز بنجاح!">
+                                        Booking Submitted Successfully!</h3>
+
+                                    <div class="confirmation-message">
+                                        <p data-en="Thank you for choosing Fanni Pro Dammam. We will contact you within 2 hours to confirm your booking and provide exact timing."
+                                            data-ar="شكرًا لاختيارك فني برو الدمام. سوف نتصل بك خلال ساعتين لتأكيد حجزك وتقديم التوقيت الدقيق">
+                                            Thank you for choosing Fanni Pro Dammam. We will contact you within 2 hours
+                                            to confirm your booking and provide exact timing.
+                                        </p>
+                                    </div>
+
+                                    <div class="booking-summary-card">
+                                        <h4 data-en="Your Booking Summary" data-ar="ملخص حجزك">Your Booking Summary</h4>
+                                        <div class="summary-content" id="bookingSummary">
+                                            <!-- Summary will be populated by JavaScript -->
+                                        </div>
+                                    </div>
+
+                                    <div class="whatsapp-notice">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <p data-en="You will also receive booking confirmation via WhatsApp"
+                                            data-ar="سوف تستلم تأكيد الحجز أيضًا عبر واتساب">You will also receive
+                                            booking confirmation via WhatsApp</p>
+                                    </div>
+
+                                    <div class="confirmation-actions">
+                                        <a href="/" class="btn btn-primary">
+                                            <i class="fas fa-home"></i>
+                                            <span data-en="Back to Home" data-ar="العودة للرئيسية">Back to Home</span>
+                                        </a>
+                                        <button type="button" class="btn btn-light new-booking">
+                                            <i class="fas fa-calendar-plus"></i>
+                                            <span data-en="Book Another Service" data-ar="حجز خدمة أخرى">Book Another
+                                                Service</span>
+                                        </button>
+                                        <a href="https://wa.me/966581524732" class="btn btn-whatsapp" target="_blank">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span data-en="Chat on WhatsApp" data-ar="محادثة واتساب">Chat on
+                                                WhatsApp</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right Column - Benefits & Info -->
+                    <div class="booking-sidebar">
+                        <div class="sidebar-card">
+                            <h3 data-en="Why Book With Us?" data-ar="لماذا تحجز معنا؟">Why Book With Us?</h3>
+                            <div class="benefits-list">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h4 data-en="Licensed Professionals" data-ar="محترفين مرخصين">Licensed
+                                            Professionals</h4>
+                                        <p data-en="All technicians are certified and insured"
+                                            data-ar="جميع الفنيين معتمدين ومؤمنين">All technicians are certified and
+                                            insured</p>
+                                    </div>
+                                </div>
+
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h4 data-en="Same-Day Service" data-ar="خدمة في نفس اليوم">Same-Day Service</h4>
+                                        <p data-en="Most requests completed within 24 hours"
+                                            data-ar="معظم الطلبات تنتهي خلال 24 ساعة">Most requests completed within 24
+                                            hours</p>
+                                    </div>
+                                </div>
+
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h4 data-en="Free Quote" data-ar="عرض سعر مجاني">Free Quote</h4>
+                                        <p data-en="Get a free quote before starting work"
+                                            data-ar="احصل على عرض سعر مجاني قبل بدء العمل">Get a free quote before
+                                            starting work</p>
+                                    </div>
+                                </div>
+
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-medkit"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h4 data-en="24/7 Emergency" data-ar="طوارئ 24/7">24/7 Emergency</h4>
+                                        <p data-en="Round-the-clock emergency service"
+                                            data-ar="خدمة طوارئ على مدار الساعة">Round-the-clock emergency service</p>
+                                    </div>
+                                </div>
+
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                    <div class="benefit-content">
+                                        <h4 data-en="Satisfaction Guarantee" data-ar="ضمان الرضا">Satisfaction Guarantee
+                                        </h4>
+                                        <p data-en="100% satisfaction or your money back"
+                                            data-ar="100% رضا أو استرداد أموالك">100% satisfaction or your money back
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3 data-en="Need Immediate Help?" data-ar="هل تحتاج مساعدة فورية؟">Need Immediate Help?
+                            </h3>
+                            <div class="emergency-contact">
+                                <div class="contact-option">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4 data-en="Call Now" data-ar="اتصل الآن">Call Now</h4>
+                                        <a href="tel:+966581524732" class="contact-number">+966 58 152 4732</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-option">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4 data-en="WhatsApp" data-ar="واتساب">WhatsApp</h4>
+                                        <a href="https://wa.me/+966581524732" class="contact-number" target="_blank">+966
+                                            58 152 4732</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-note">
+                                    <p data-en="Emergency services available 24/7. Call us anytime!"
+                                        data-ar="خدمات الطوارئ متاحة 24/7. اتصل بنا في أي وقت!">
+                                        Emergency services available 24/7. Call us anytime!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3 data-en="Service Areas in Dammam" data-ar="مناطق الخدمة في الدمام">Service Areas in
+                                Dammam</h3>
+                            <div class="service-areas">
+                                <span data-en="Al-Aziziyah" data-ar="العزيزية">Al-Aziziyah</span>
+                                <span data-en="Al-Faisaliyah" data-ar="الفيصلية">Al-Faisaliyah</span>
+                                <span data-en="Al-Rakah" data-ar="الراكة">Al-Rakah</span>
+                                <span data-en="Al-Khobar" data-ar="الخبر">Al-Khobar</span>
+                                <span data-en="Al-Dhahran" data-ar="الظهران">Al-Dhahran</span>
+                                <span data-en="Al-Olaya" data-ar="العليا">Al-Olaya</span>
+                                <span data-en="Al-Anoud" data-ar="العنود">Al-Anoud</span>
+                                <span data-en="All Areas" data-ar="جميع المناطق">All Areas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Guarantee Section -->
+    <section class="service-guarantee">
+        <div class="container">
+            <div class="guarantee-content">
+                <h2 data-en="Our Service Guarantee" data-ar="ضمان خدمتنا">Our Service Guarantee</h2>
+                <div class="guarantee-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 data-en="Quality Workmanship" data-ar="جودة العمل">Quality Workmanship</h4>
+                        <p data-en="Skilled technicians with years of experience" data-ar="فنيين ماهرين بخبرات سنوات">
+                            Skilled technicians with years of experience</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 data-en="On-Time Service" data-ar="خدمة في الوقت المحدد">On-Time Service</h4>
+                        <p data-en="We arrive within 2 hours of booking" data-ar="نصل خلال ساعتين من الحجز">We arrive
+                            within 2 hours of booking</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4 data-en="Fair Pricing" data-ar="أسعار عادلة">Fair Pricing</h4>
+                        <p data-en="No hidden charges, transparent pricing" data-ar="لا رسوم خفية، أسعار شفافة">No
+                            hidden charges, transparent pricing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 data-en="Fanni Pro Dammam" data-ar="فني برو الدمام">Fanni Pro Dammam</h3>
+                    <p data-en="Your trusted handyman service in Dammam, providing reliable and affordable home repair solutions since 2018."
+                        data-ar="خدمة الفني الموثوقة في الدمام، تقدم حلول إصلاح منزلية موثوقة وبأسعار معقولة منذ عام 2018">
+                        Your trusted handyman service in Dammam, providing reliable and affordable home repair solutions
+                        since 2018.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/+966581524732" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
+                    <ul>
+                        <li><a href="/" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                        <li><a href="/about" data-en="About Us" data-ar="من نحن">About Us</a></li>
+                        <li><a href="/services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="/booking" data-en="Book Now" data-ar="احجز الآن">Book Now</a></li>
+                        <li><a href="/contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                        <li><a href="/admin/login" data-en="Admin Login" data-ar="تسجيل دخول الإدارة">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Our Services" data-ar="خدماتنا">Our Services</h3>
+                    <ul>
+                        <li><a href="/services#general" data-en="General Repairs" data-ar="الإصلاحات العامة">General
+                                Repairs</a></li>
+                        <li><a href="/services#electrical" data-en="Electrical Work" data-ar="أعمال الكهرباء">Electrical
+                                Work</a></li>
+                        <li><a href="/services#plumbing" data-en="Plumbing Services" data-ar="خدمات السباكة">Plumbing
+                                Services</a></li>
+                        <li><a href="/services#painting" data-en="Painting Services" data-ar="خدمات الدهان">Painting
+                                Services</a></li>
+                        <li><a href="/services#assembly" data-en="Furniture Assembly" data-ar="تجميع الأثاث">Furniture
+                                Assembly</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +966 55 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@fanniprodammam.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Dammam, Saudi Arabia"
+                                data-ar="الدمام، السعودية">Dammam, Saudi Arabia</span></li>
+                        <li><i class="fas fa-clock"></i> <span data-en="24/7 Emergency Service Available"
+                                data-ar="خدمة الطوارئ متاحة 24/7">24/7 Emergency Service Available</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p data-en="© 2024 Fanni Pro Dammam. All Rights Reserved. | Professional Handyman Services in Dammam"
+                    data-ar="© 2024 فني برو الدمام. جميع الحقوق محفوظة. | خدمات فني محترف في الدمام">© 2024 Fanni Pro
+                    Dammam. All Rights Reserved. | Professional Handyman Services in Dammam</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Professional Floating Call Widget -->
+    <div class="floating-call-widget">
+        <!-- Main Button -->
+        <div class="call-btn" id="callBtn">
+            <div class="btn-icon">
+                <svg viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                </svg>
+                <div class="ring"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
+            <span class="btn-label">
+                <span class="en">Call Now</span>
+                <span class="ar">اتصل الآن</span>
+            </span>
+        </div>
+
+        <!-- Popup Menu -->
+        <div class="call-menu">
+            <div class="menu-header">
+                <h3>
+                    <span class="en">Contact Options</span>
+                    <span class="ar">خيارات الاتصال</span>
+                </h3>
+                <button class="close-menu">×</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Phone -->
+                <a href="tel:+966581524732" class="menu-item phone-item">
+                    <div class="item-icon">
+                        <svg viewBox="0 0 24 24" fill="#0ea5e9">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-title">
+                            <span class="en">Phone Call</span>
+                            <span class="ar">اتصال هاتفي</span>
+                        </div>
+                        <div class="item-desc">+966 55 123 4567</div>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+966581524732" class="menu-item whatsapp-item" target="_blank">
+                    <div class="item-icon">
+                        <svg viewBox="0 0 24 24" fill="#25D366">
+                            <path
+                                d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01 .44l-.27 .41-.39 .42c-.12 .12-.26 .25-.12 .5 .12 .26 .62 1 .88 3l-3 -3c-.08 -.08 -.08 -.08 -.08 -.08l .08 -3c .08 -.08 .08 -.08 .08 -.08l -3 -3c -.7 -7 -7 -7 -7 -7s -7 7 -7 7l 3 3c .5 5 5 5 5 5s 5 -5 5 -5l -3 -3z" />
+                        </svg>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-title">
+                            <span class="en">WhatsApp</span>
+                            <span class="ar">واتساب</span>
+                        </div>
+                        <div class="item-desc">
+                            <span class="en">Message us</span>
+                            <span class="ar">راسلنا</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Copy -->
+                <div class="menu-item copy-item" id="copyBtn">
+                    <div class="item-icon">
+                        <svg viewBox="0 0 24 24" fill="#64748b">
+                            <path
+                                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                        </svg>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-title">
+                            <span class="en">Copy Number</span>
+                            <span class="ar">نسخ الرقم</span>
+                        </div>
+                        <div class="item-desc">
+                            <span class="en">Copy to clipboard</span>
+                            <span class="ar">انسخ للاتصال لاحقاً</span>
+                        </div>
+                    </div>
+                    <div class="copy-success">
+                        <span class="en">Copied!</span>
+                        <span class="ar">تم النسخ!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="menu-overlay"></div>
+    </div>
+
+
+    <script src="/js/main.js"></script><!-- Yeh line check karein -->
+    <script src="/js/booking.js"></script>
+    <script src="/js/call_icon.js"></script>
+    <script src="/scripts/booking.js"></script>
+</body>
+
+</html>

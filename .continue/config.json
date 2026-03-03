@@ -1,0 +1,13 @@
+{
+  "defaultModel": "DeepSeek Coder (Local)",
+  "models": [
+    {
+      "title": "DeepSeek Coder (Local)",
+      "provider": "ollama",
+      "model": "deepseek-coder"
+    }
+  ],
+  "autocomplete": {
+    "enabled": true
+  }
+}
